@@ -1,0 +1,18 @@
+<div>
+  <h1>Champions</h1>
+  <button (click)="doSearch()"></button>
+
+  
+  <p>{{championList}}</p>
+  <table>
+    <tr *ngFor="let c of championList">
+      <td>{{champions[c]</td>
+      <td>{{champions[c].name}}</td>
+    </tr>
+  </table>
+
+  
+  <div>
+    <p *ngIf="loading">Loading...</p>
+  </div>
+</div>
