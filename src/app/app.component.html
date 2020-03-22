@@ -1,17 +1,10 @@
 <div>
-  <h1>Champions</h1>
-  <button (click)="doSearch()"></button>
+  <nav>
+    <a routerLink="/">Champions</a>
+    <a routerLink="/tierList">TierList</a>
+  </nav>
 
-  <p>
-    <img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/Aatrox.png" width="50px">
-  </p>
-  <table>
-    <tr *ngFor="let c of championList">
-      <td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{c}}.png" width="50px"></td>
-      <td>{{champions[c].name}}</td>
-    </tr>
-  </table>
-
+  
   
   <div>
     <p *ngIf="loading">Loading...</p>
