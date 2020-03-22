@@ -9,10 +9,12 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { TierListComponent } from './champion-tier-list/champion-tier-list.component'
 
+import { ChampionsComponent } from './champions/champions.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule,  AppRoutingModule],
-  declarations: [ AppComponent, TierListComponent],
+  declarations: [ AppComponent, TierListComponent, ChampionsComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
