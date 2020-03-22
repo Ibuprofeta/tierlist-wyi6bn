@@ -1,13 +1,14 @@
 <body>
-	<nav>
-		<a routerLink="/">Champions</a>
-		<a routerLink="/tierList">TierList</a>
-	</nav>
+	<!-- <nav>
+		<a>Champions</a>
+		<a>TierList</a>
+	</nav> -->
 
 	<div>
 		<p *ngIf="loading">Loading...</p>
 	</div>
-
-  <app-champion-list></app-champion-list>
-  <app-tierlist></app-tierlist>
+	<div id="content">
+		<app-champion-list></app-champion-list>
+		<app-tierlist></app-tierlist>
+	</div>
 </body>
