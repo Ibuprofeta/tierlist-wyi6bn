@@ -1,24 +1,12 @@
-<nav>
-	<a routerLink="/">Champions</a>
-	<a routerLink="/tierList">TierList</a>
-</nav>
+<body>
+	<nav>
+		<a routerLink="/">Champions</a>
+		<a routerLink="/tierList">TierList</a>
+	</nav>
 
-<div>
-	<p *ngIf="loading">Loading...</p>
-</div>
+	<div>
+		<p *ngIf="loading">Loading...</p>
+	</div>
 
-<div>
-  <h1>Champions</h1>
-  <button (click)="doUpdate()">UPDATE</button>
-  
-  <div>
-    <input  class="form-control" type="text" placeholder="Search" [(ngModel)]="searchText" autocomplete="off">
-  </div>
-
-  <table>
-    <tr *ngFor="let c of championList | filter:searchText">
-      <td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{champions[c].id}}.png" width="50px"></td>
-      <td>{{champions[c].name}}</td>
-    </tr>
-  </table>
-</div>
+  <app-champion-list></app-champion-list>
+</body>
