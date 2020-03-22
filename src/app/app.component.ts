@@ -38,7 +38,7 @@ export class AppComponent  {
           this.loading = false;
           this.champions = data[0].data;
           this.championList = Object.keys(this.champions);
-          console.log(this.champions[this.championList[0]]);
+          
         }
     );
   }

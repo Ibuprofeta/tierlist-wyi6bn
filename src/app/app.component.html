@@ -2,11 +2,12 @@
   <h1>Champions</h1>
   <button (click)="doSearch()"></button>
 
-  
-  <p>{{championList}}</p>
+  <p>
+    <img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/Aatrox.png" width="50px">
+  </p>
   <table>
     <tr *ngFor="let c of championList">
-      <td>{{champions[c]</td>
+      <td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{c}}.png" width="50px"></td>
       <td>{{champions[c].name}}</td>
     </tr>
   </table>
