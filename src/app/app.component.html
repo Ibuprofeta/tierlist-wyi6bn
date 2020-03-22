@@ -1,11 +1,10 @@
-<div>
-  <nav>
-    <a routerLink="/">Champions</a>
-    <a routerLink="/tierList">TierList</a>
-  </nav>
+<nav>
+	<a routerLink="/">Champions</a>
+	<a routerLink="/tierList">TierList</a>
+</nav>
 
-  <div>
-    <p *ngIf="loading">Loading...</p>
-  </div>
-  
+<div>
+	<p *ngIf="loading">Loading...</p>
 </div>
+
+<routing-outlet>
