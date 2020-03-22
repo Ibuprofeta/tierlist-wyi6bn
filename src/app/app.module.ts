@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 
-import{ TierListComponent} from './champion-tier-list/champion-tier-list.component'
+import { TierListComponent } from './champion-tier-list/champion-tier-list.component'
 
 
 @NgModule({
