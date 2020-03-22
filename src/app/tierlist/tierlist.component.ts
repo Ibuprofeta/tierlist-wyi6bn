@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tierlist',
@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tierlist.component.css']
 })
 export class TierlistComponent implements OnInit {
+  loading = false;
+  @Input() listSplus: Array<string> = [];
+  @Input() listS: Array<string> = [];
+  @Input() listA: Array<string> = [];
 
-  constructor() { }
+  constructor() { 
+    
+  }
+  addPrint(): void{
+    console.log(this.listSplus);
+  }
 
   ngOnInit() {
+    
   }
 
 }

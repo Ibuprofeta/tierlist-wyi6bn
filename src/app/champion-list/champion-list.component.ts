@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -10,13 +10,16 @@ export class ChampionListComponent implements OnInit {
   name = "ChampionList";
   searchText;
   loading = false;
-  changeDiv = document.getElementById("table");
   champions: Array<any> = [];
   championList: Array<string> = [];
 
   listSplus: Array<string> = [];
   listS: Array<string> = [];
   listA: Array<string> = [];
+
+  @Output() eventPlus = new EventEmitter<Array<string>>();
+  @Output() eventS = new EventEmitter<Array<string>>();
+  @Output() eventA = new EventEmitter<Array<string>>();
 
   constructor(private http: HttpClient) {}
 
@@ -35,8 +38,15 @@ export class ChampionListComponent implements OnInit {
       list.push(champ);
   }
 
-  changeList(): void{
-    this.changeDiv
+  sendPlus(){
+    this.eventPlus.emit(this.listSplus);
+
+  }
+  sendS(){
+    this.eventS.emit(this.listS);
+  }
+  sendA(){
+    this.eventA.emit(this.listA);
   }
 
   ngOnInit() {}

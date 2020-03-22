@@ -9,9 +9,9 @@
 			<tr *ngFor="let c of championList | filter:searchText">
 				<td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{champions[c].id}}.png" width="50px"></td>
 				<td>{{champions[c].name}}</td>
-				<td (click)="addChampion(champions[c].id,listSplus)"><button class="buttonSplus">S+</button></td>
-				<td (click)="addChampion(champions[c].id,listS)"><button class="buttonS">S</button></td>
-				<td (click)="addChampion(champions[c].id,listA)"><button class="buttonA">A</button></td>
+				<td (click)="addChampion(champions[c].id,listSplus); sendPlus()"><button class="buttonSplus">S+</button></td>
+				<td (click)="addChampion(champions[c].id,listS); sendS()"><button class="buttonS">S</button></td>
+				<td (click)="addChampion(champions[c].id,listA); sendA()"><button class="buttonA">A</button></td>
 			</tr>
 		</table>
 	</div>

@@ -8,7 +8,7 @@
 		<p *ngIf="loading">Loading...</p>
 	</div>
 	<div id="content">
-		<app-champion-list></app-champion-list>
-		<app-tierlist></app-tierlist>
+		<app-champion-list (eventPlus)="recievePlus($event)" (eventS)="recieveS($event)" (eventA)="recieveA($event)"></app-champion-list>
+		<app-tierlist [listSplus]="listPlus" [listS]="listS" [listA]="listA"></app-tierlist>
 	</div>
 </body>

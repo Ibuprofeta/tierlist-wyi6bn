@@ -1,1 +1,22 @@
 <h1>TierList</h1>
+<!-- <button (click)="addPrint()">UPDATE</button> -->
+
+<div id="table">
+		<table>
+			<tr *ngFor="let c of listSplus; let i = index">
+				<td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{listSplus[i]}}.png" width="50px"></td>
+				<td>S+</td>
+			</tr>
+		</table>
+    <table>
+			<tr *ngFor="let c of listS; let i = index">
+				<td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{listS[i]}}.png" width="50px"></td>
+				<td>S</td>
+			</tr>
+		</table>
+    <table>
+			<tr *ngFor="let c of listA; let i = index">
+				<td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{listA[i]}}.png" width="50px"></td>
+				<td>A</td>
+			</tr>
+		</table>
