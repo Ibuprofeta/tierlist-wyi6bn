@@ -9,14 +9,14 @@
 
 <div>
   <h1>Champions</h1>
-  <button (click)="doSearch()">UPDATE</button>
+  <button (click)="doUpdate()">UPDATE</button>
   
-  <div class="searchBar">
-    <input type="text" placeholder="Search">
+  <div>
+    <input  class="form-control" type="text" placeholder="Search" [(ngModel)]="searchText" autocomplete="off">
   </div>
 
   <table>
-    <tr *ngFor="let c of championList">
+    <tr *ngFor="let c of championList | filter:searchText">
       <td><img src="https://cdn.jsdelivr.net/gh/Ibuprofeta/tierlist-wyi6bn@master/src/assets/champion/{{champions[c].id}}.png" width="50px"></td>
       <td>{{champions[c].name}}</td>
     </tr>
