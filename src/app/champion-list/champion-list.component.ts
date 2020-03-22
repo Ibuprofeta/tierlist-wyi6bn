@@ -21,6 +21,7 @@ export class ChampionListComponent implements OnInit {
     this.http.get(apiURL).subscribe((data: Array<any>) => {
       this.loading = false;
       this.champions = data[0].data;
+      console.log(this.champions);
       this.championList = Object.keys(this.champions);
       console.log(this.championList);
     });
