@@ -22,4 +22,6 @@ export class AppComponent  {
   recieveA($event){
     this.listA = $event;
   }
+
+  
 }

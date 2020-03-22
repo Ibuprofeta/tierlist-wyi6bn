@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ChampionListComponent } from './champion-list/champion-list.component';
 import { TierlistComponent } from './tierlist/tierlist.component';
+import { DataserviceService } from './dataservice.service';
+import { DataService } from './data.service';
 
 
 
@@ -16,6 +18,7 @@ import { TierlistComponent } from './tierlist/tierlist.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, Ng2SearchPipeModule],
   declarations: [ AppComponent, ChampionListComponent, TierlistComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [DataserviceService, DataService]
 })
 export class AppModule { }
