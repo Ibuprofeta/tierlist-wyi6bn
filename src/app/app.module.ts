@@ -14,7 +14,7 @@ import { TierlistComponent } from './tierlist/tierlist.component';
 // firebase 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { AuthenticationService } from './services/authentication.';
+import { AuthenticationService } from './services/authentication';
 
 @NgModule({
   imports:      [ 
