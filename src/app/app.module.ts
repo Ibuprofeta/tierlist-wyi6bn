@@ -15,9 +15,6 @@ import { TierlistComponent } from './tierlist/tierlist.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth } from '@angular/fire/auth';
 
-
-
-
 @NgModule({
   imports:      [ 
     BrowserModule, 
@@ -43,5 +40,6 @@ import { AngularFireAuth } from '@angular/fire/auth';
     ChampionListComponent, 
     TierlistComponent],
   bootstrap:    [ AppComponent ],
+  providers: [AuthenticationService],
 })
 export class AppModule { }
