@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ChampionListComponent } from './champion-list/champion-list.component';
 import { TierlistComponent } from './tierlist/tierlist.component';
-import { ConfigService } from './config.service';
+
+//Routing
 
 @NgModule({
   imports:      [ 
@@ -25,7 +26,6 @@ import { ConfigService } from './config.service';
     TierlistComponent],
   bootstrap:    [ 
     AppComponent ],
-  providers: [ConfigService],
 })
 
 export class AppModule { }
