@@ -25,7 +25,7 @@ export class ChampionListComponent implements OnInit {
 
   doUpdate(): void {
     this.loading = true;
-    const apiURL = "../assets/data.json";
+    const apiURL = "..assets/data.json";
     console.log(apiURL);
     this.http.get(apiURL).subscribe((data: Array<any>) => {
       this.loading = false;
