@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ChampionListComponent } from './champion-list/champion-list.component';
 import { TierlistComponent } from './tierlist/tierlist.component';
+import { ConfigService } from './config.service';
 
 @NgModule({
   imports:      [ 
@@ -24,6 +25,7 @@ import { TierlistComponent } from './tierlist/tierlist.component';
     TierlistComponent],
   bootstrap:    [ 
     AppComponent ],
+  providers: [ConfigService],
 })
 
 export class AppModule { }

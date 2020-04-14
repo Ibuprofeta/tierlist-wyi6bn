@@ -1,0 +1,4 @@
+{
+  "championsUrl": "http://ddragon.leagueoflegends.com/cdn/10.6.1/data/en_US/champion.json",
+  "championsLocalFile": "./data.json"
+}
